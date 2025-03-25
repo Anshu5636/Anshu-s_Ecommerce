@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anshu's E-Commerce Store - Cart</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Navigation (Same as previous pages) -->
+    <nav class="bg-blue-600 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center">
+                <h1 class="text-2xl font-bold mr-6">Anshu's Store</h1>
+                <div class="space-x-4">
+                    <a href="index.html" class="hover:text-blue-200">Home</a>
+                    <a href="shop.html" class="hover:text-blue-200">Shop</a>
+                    <a href="about.html" class="hover:text-blue-200">About Us</a>
+                    <a href="contact.html" class="hover:text-blue-200">Contact</a>
+                </div>
+            </div>
+            <div class="flex items-center">
+                <a href="cart.html" class="bg-white text-blue-600 px-4 py-2 rounded hover:bg-gray-100 mr-2">
+                    🛒 Cart (<span id="cart-count">0</span>)
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cart Content -->
+    <div class="container mx-auto px-4 py-12">
+        <div class="max-w-2xl mx-auto bg-white rounded-lg shadow-md p-8">
+            <h2 class="text-2xl font-bold mb-6">Your Shopping Cart</h2>
+            
+            <div id="cart-items">
+                <!-- Cart items will be dynamically added here -->
+            </div>
+
+            <div id="cart-empty" class="text-center text-gray-500 hidden">
+                <p class="text-xl mb-4">Your cart is empty</p>
+                <a href="shop.html" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">
+                    Continue Shopping
+                </a>
+            </div>
+
+            <div id="cart-summary" class="mt-6 border-t pt-4">
+                <div class="flex justify-between">
+                    <span class="font-bold">Total:</span>
+                    <span id="cart-total" class="font-bold">$0.00</span>
+                </div>
+                <button onclick="checkout()" class="w-full bg-green-600 text-white py-2 rounded mt-4 hover:bg-green-700">
+                    Proceed to Checkout
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer (Same as previous pages) -->
+    <footer class="bg-blue-700 text-white py-8 mt-12">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 Anshu's E-Commerce Store. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/cart.js"></script>
+</body>
+</html>

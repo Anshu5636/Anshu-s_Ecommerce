@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anshu's E-Commerce Store - Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-blue-600 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center">
+                <h1 class="text-2xl font-bold mr-6">Anshu's Store</h1>
+                <div class="space-x-4">
+                    <a href="index.html" class="hover:text-blue-200">Home</a>
+                    <a href="shop.html" class="hover:text-blue-200">Shop</a>
+                    <a href="about.html" class="hover:text-blue-200">About Us</a>
+                    <a href="contact.html" class="hover:text-blue-200">Contact</a>
+                </div>
+            </div>
+            <div class="flex items-center">
+                <a href="cart.html" class="bg-white text-blue-600 px-4 py-2 rounded hover:bg-gray-100 mr-2">
+                    🛒 Cart (<span id="cart-count">0</span>)
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-gradient-to-r from-blue-500 to-purple-600 text-white text-center py-20">
+        <div class="container mx-auto">
+            <h1 class="text-4xl font-bold mb-4">Welcome to Anshu's E-Commerce Store</h1>
+            <p class="text-xl mb-8">Discover Amazing Products Across Multiple Categories</p>
+            <a href="shop.html" class="bg-white text-blue-600 px-6 py-3 rounded-full hover:bg-gray-100 transition">
+                Shop Now
+            </a>
+        </div>
+    </header>
+
+    <!-- Featured Categories -->
+    <section class="container mx-auto mt-12 px-4">
+        <h2 class="text-3xl font-bold text-center mb-8">Featured Categories</h2>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+            <div class="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-xl transition">
+                <img src="/api/placeholder/300/300" alt="Electronics" class="mx-auto mb-4 rounded">
+                <h3 class="text-xl font-semibold">Electronics</h3>
+                <a href="shop.html" class="mt-4 inline-block text-blue-600 hover:underline">View Products</a>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-xl transition">
+                <img src="/api/placeholder/300/300" alt="Clothing" class="mx-auto mb-4 rounded">
+                <h3 class="text-xl font-semibold">Clothing</h3>
+                <a href="shop.html" class="mt-4 inline-block text-blue-600 hover:underline">View Products</a>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-xl transition">
+                <img src="/api/placeholder/300/300" alt="Home & Kitchen" class="mx-auto mb-4 rounded">
+                <h3 class="text-xl font-semibold">Home & Kitchen</h3>
+                <a href="shop.html" class="mt-4 inline-block text-blue-600 hover:underline">View Products</a>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-xl transition">
+                <img src="/api/placeholder/300/300" alt="Books" class="mx-auto mb-4 rounded">
+                <h3 class="text-xl font-semibold">Books</h3>
+                <a href="shop.html" class="mt-4 inline-block text-blue-600 hover:underline">View Products</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-700 text-white py-8 mt-12">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 Anshu's E-Commerce Store. All Rights Reserved.</p>
+            <div class="mt-4 space-x-4">
+                <a href="#" class="hover:text-blue-200">Privacy Policy</a>
+                <a href="#" class="hover:text-blue-200">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/cart.js"></script>
+</body>
+</html>
